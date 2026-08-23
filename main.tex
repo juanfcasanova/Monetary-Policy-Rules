@@ -1,0 +1,200 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage[spanish]{babel}
+\addto\captionsspanish{\renewcommand{\abstractname}{}}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+\title{Del contexto histórico a la teoría económica:\\
+La conversación científica detrás de \textit{Monetary Policy Rules and Macroeconomic Stability}}
+
+\author{Juan Francisco Casanova}
+\date{Junio 2026}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+
+\section*{Abstract}
+
+    El objetivo de este trabajo no es únicamente explicar el contenido de \textit{Monetary Policy Rules and Macroeconomic Stability}, sino reconstruir la conversación científica en la que se inserta. Para ello, se analiza el contexto histórico que permitió contrastar empíricamente su hipótesis, los aportes teóricos sobre los que se apoya y la influencia que ejerció sobre la literatura posterior. Desde esta perspectiva, el paper de Clarida, Galí y Gertler puede entenderse no como un resultado aislado, sino como una contribución dentro de un proceso acumulativo de construcción del conocimiento económico.
+    
+\end{abstract}
+
+\section*{Conversación científica previa}
+\indent Todo comienza con John Maynard Keynes, quien sostenía en su libro “The General Theory of Employment, Interest and Money” (1936) que la política económica podía estabilizar la actividad económica a través de la gestión de la demanda agregada. Sobre esta base, Phillips y posteriormente Samuelson-Solow encontraron evidencia empírica sobre una relación inversa entre inflación y desempleo. Básicamente era un trade-off en el que los bancos centrales podían elegir un punto óptimo dentro de esa curva dependiendo de sus preferencias. Sin embargo, Milton Friedman cuestiona esa conclusión agregando el concepto de expectativas adaptativas (backward-looking) por parte de los agentes, y que debido a esto, ese trade-off sólo era sostenible en el corto plazo, cuando la inflación sorprende a los agentes. Robert Lucas Jr. profundizó esta crítica reemplazando el supuesto de que los agentes tienen expectativas adaptativas, por expectativas que son racionales, entonces los agentes modifican su comportamiento según la política económica (forward-looking), por lo que existen distintas relaciones empíricas bajo un régimen que pueden o no ser explotadas según la coyuntura. \\
+
+\indent Posteriormente Kydland \& Prescott demuestran que incluso un banco central bien intencionado enfrenta un problema de inconsistencia temporal; una vez formadas las expectativas por parte del público, la autoridad monetaria puede tener incentivos a desviarse de sus promesas con el objetivo de estimular temporalmente el producto mediante una mayor inflación. El problema aparece cuando los agentes anticipan este comportamiento, debido a una falta de credibilidad institucional, resultando en un aumento de la inflación sin ese estímulo temporal en el producto. Barro \& Gordon formalizan matemáticamente este problema mediante un juego repetido entre el Banco Central y el sector privado, concluyendo que las políticas monetarias con reglas estructuradas dominan a las políticas discrecionales eliminando el sesgo inflacionario derivado de la falta de credibilidad.
+
+\vspace{1em}
+
+\indent Para poder modelar este comportamiento del Banco Central, Taylor propone una regla (backward-looking)  en la que la tasa de interés responde a la inflación y al producto objetivo respecto al desvío que se encuentre en lo observado; logrando describir con notable precisión el comportamiento  de la FED durante las décadas del 80 y 90. 
+No obstante, su regla dejaba abierta tres cuestiones fundamentales: los coeficientes eran calibrados manualmente, es decir, no estaban estimados econométricamente; el modelo no explicaba bajo qué condiciones una función de reacción resultaba verdaderamente estabilizadora; y el Banco Central no incorporaba expectativas racionales. Es precisamente sobre estas cuestiones donde se inserta la contribución de Clarida, Galí y Gertler.
+
+
+
+\section*{Clarida, Galí \& Gertler:}
+
+\section{Introducción}
+\indent A través de la comparación entre períodos pre-Volcker (1965-1979), y Volcker-Greenspan (1979-1987; 1987-2006), Clarida, Galí \& Gertler cuestionan la interpretación predominante de que la inestabilidad y la estanflación de los años setenta fueron causadas exclusivamente por shocks. Los autores sostienen que esta visión debe ser matizada ya que la conducta sistemática de la Reserva Federal, reflejada en su función de reacción frente a la inflación, desempeñó un papel fundamental en la determinación de la estabilidad macroeconómica. Su principal contribución dentro de la conversación académica (empírica y teórica) es entonces la de demostrar que la forma de la función de reacción del banco central frente a la inflación es un elemento determinante para el éxito o fracaso de un programa de estabilización.
+
+
+\section{Contexto económico e histórico}
+\indent Durante la década de 1970 coexistieron una serie de shocks (tanto externos como internos): la Guerra de Vietnam, la expansión fiscal asociada al programa Great Society de Lyndon Johnson, el déficit fiscal, la ruptura del sistema de Bretton Woods, que culminó en el abandono del patrón oro bajo el Nixon Shock, los shocks petroleros (1973 y 1979) y otros factores que empujaron hacia una inflación persistentemente elevada.
+
+\indent La interpretación predominante entre académicos atribuía este episodio de inestabilidad principalmente a dichos shocks. Bajo esta visión, la estanflación habría sido consecuencia de circunstancias que escapaban al control de la política monetaria. Es precisamente esta interpretación la que Clarida, Galí y Gertler buscan revisar.
+
+\indent Acuñaron un término que denominaron “Accommodative policies”, son las políticas que amortiguan los síntomas de corto plazo pero agravan los de largo plazo $(\beta>1)$. Después están las políticas estabilizadoras, aquellas que suben la FED Funds Rate a un ritmo mayor a la aceleración inflacionaria $(\beta>1)$. Generalizan la regla de Taylor utilizando expectativas estimadas por GMM evitando el problema de simultaneidad/endogeneidad. Encuentran unicidad de equilibrio con $(\beta>1)$ bajo las condiciones de Blanchard-Kahn. Conectan el coeficiente estimado con la posibilidad teórica de indeterminación, mostrando que =0,83 (pre-Volcker) cae en la zona de sunspots (es decir, donde los shocks terminan afectando a la tasa real) y =2,15 (Volcker-Greenspan) no.
+\vspace{1em}
+
+\indent Volcker consideraba que la prioridad era restablecer la estabilidad de precios, aún al costo de provocar una recesión transitoria. La tasa de los FED Funds llegó cerca del 20\% causando 2 recesiones muy fuertes pero bajando la inflación de 13\% a un poco menos del 4\%. El problema era que la inflación causaba una baja en la tasa real que perpetuaba el ciclo inflacionario. La política monetaria debía mover la tasa a un ritmo mayor que la variación de la inflación para que los sunspots no ocurran. Según los autores, la inflación no bajó porque se hayan terminado los shocks, sino por el cambio que hizo Volcker en las reglas de política monetaria.
+
+\vspace{1em}
+
+Donde la Política es estabilizadora $\Leftrightarrow \ \Delta\% i_t>\Delta\%\pi_t \Rightarrow \frac{\partial r_t}{\partial t}<0$
+
+\vspace{1em}
+
+\indent Justamente, lo que Clarida, Galí y Gertler explican en este trabajo es que la estabilidad macroeconómica depende de la forma en que el banco central responde a la inflación, pudiendo así causar resultados similares o incluso peores a políticas discrecionales aún con una política “controlada”, cuando se efectúan las políticas acomodaticias (Accommodative policies).
+
+\section{Sunspots: [Expectativas autocumplidas]}
+
+\indent En este contexto, los sunspots no representan shocks económicos fundamentales, sino perturbaciones que pueden afectar a la economía porque modifican las expectativas de los agentes. Su característica distintiva es que no alteran directamente variables reales como la productividad o la tecnología; su influencia surge cuando la mayoría de los agentes creen que estos shocks tendrán efectos económicos reales en el futuro y coordinan su comportamiento en consecuencia. Bajo una política monetaria acomodaticia ($\beta<1$), un aumento de las expectativas de inflación es validado por una respuesta insuficiente de la Reserva Federal, reduciendo la tasa de interés real e impulsando la demanda agregada. De este modo, la inflación inicialmente esperada termina materializándose, transformando una creencia colectiva en una profecía autocumplida. En cambio, cuando la autoridad monetaria responde más que proporcionalmente a la inflación esperada ($\beta>1$), la tasa de interés real aumenta, la demanda se contrae y las expectativas inflacionarias dejan de confirmarse. En estas condiciones, los sunspots pierden su capacidad de coordinar expectativas y desaparecen los equilibrios múltiples.
+
+\section{Interpretación económica de las ecuaciones:}
+
+\textit{CGG incorporan la función de reacción de la FED enmarcada en un modelo Neo-Keynesiano con sticky prices.}
+
+\vspace{1em}
+
+Phillips curve Neo-Keynesiana:
+
+\vspace{1em}
+
+$\pi_t=\beta E[\pi_{t+1}|\Omega_t]+\lambda(y_t-z_t)$
+
+\vspace{1em}
+
+\indent La inflación depende de la inflación esperada dada la información disponible descontada por la importancia que le dan los agentes al futuro. En el segundo término se encuentra la diferencia entre el producto objetivo ($y_t$) y el producto natural ($z_t$) ponderada por la pendiente de la curva de Phillips ($\lambda_t$).
+
+\vspace{1em}
+
+Curva IS forward-looking dinámica:  
+
+\vspace{1em}
+
+$y_t=E[y_{t+1}|\Omega_t]-\frac{1}{\sigma}(r_t-E[\pi_{t+1}|\Omega_t])+g_t$
+
+\vspace{1em}
+
+$E[y_t+1|\Omega_t]$, expectativa de producto futuro, vía suavizamiento de consumo. 
+
+Efecto de la tasa real sobre la demanda agregada $\frac{1}{\sigma}(r_t-E[\pi_t+1|\Omega_t])$.
+
+El término $g_t$ es exógeno.
+
+\vspace{1em}
+
+Regla de Taylor [Forward-Looking]: 
+
+\vspace{1em}
+
+$r^*_t=r^*+\beta[E[\pi_t,_k|\Omega_t]-\pi^*]+\gamma E[x_t,_q|\Omega_t]$
+
+\vspace{1em}
+
+donde:
+
+\vspace{1em}
+
+$r_t^*$[Tasa Objetivo]: La tasa que la FED quiere fijar. No es una variable Jump (se logra a través del interest rate smoothing).
+
+\vspace{1em}
+
+$r^*$: La tasa que la FED elegiría si todo estuviera perfecto (t en objetivo; yt potencial en objetivo).
+
+\vspace{1em}
+
+$\pi^*$: Inflación objetivo
+
+\vspace{1em}
+
+$\Omega_t$: Información conocida en t por parte de la FED {information set}.
+
+\vspace{1em}
+
+$x_t,_q$(Output gap): es el producto observado respecto al potencial ($\frac{y_t-y^*_t}{y^*_t}$) \footnote{$z_t$ en la curva de Phillips y $x_t,_q$ en la regla de Taylor no son la misma variable: $z_t$  es el producto de precios flexibles, un objeto teórico no observable que determina el gap relevante para la inflación. $x_t,_q$ es la medida de output gap que la FED efectivamente observa y usa para fijar la tasa, lo cual introduce una fricción entre el gap '"verdadero" del modelo y el gap sobre el que se construye la política.
+}.
+
+\vspace{1em}
+
+Cuando $E[\pi_t,_k|\Omega_t]>\pi^*$;la regla debe satisfacerse que $(\beta>1)$ para que la política sea estabilizadora.
+
+\vspace{1em}
+
+Donde la tasa objetivo real ex-ante es:
+$rr_t^*=r_t-E[\pi_t,_k|\Omega_t]]$\\
+(ecuación de Fisher linealizada)
+y la tasa real objetivo ex-ante de equilibrio en el Largo plazo es:
+
+\vspace{1em}
+$rr_t^*=r_t-\pi^*$\\
+
+\vspace{1em}
+
+Reemplazando:
+
+\[
+\begin{aligned}
+rr_t^* &= r_t^* + \beta\big[E[\pi_{t,k}|\Omega_t] - \pi^*\big] + \gamma E[x_{t,q}|\Omega_t] - E[\pi_{t,k}|\Omega_t] \\
+&= r_t^* + \beta E[\pi_{t,k}|\Omega_t] - \beta \pi^* + \gamma E[x_{t,q}|\Omega_t] - E[\pi_{t,k}|\Omega_t] \\
+&= r_t^* + (\beta-1) E[\pi_{t,k}|\Omega_t] - \beta\pi^* + \gamma E[x_{t,q}|\Omega_t] \\
+&= r_t^* + (\beta-1) E[\pi_{t,k}|\Omega_t] - \pi^* - (\beta-1)\pi^* + \gamma E[x_{t,q}|\Omega_t] \\
+&= \underbrace{(r_t^* - \pi^*)}_{rr^*} + (\beta-1)\big(E[\pi_{t,k}|\Omega_t] - \pi^*\big) + \gamma E[x_{t,q}|\Omega_t] \\[4pt]
+rr_t^* &= rr^* + (\beta-1)\big(E[\pi_{t,k}|\Omega_t] - \pi^*\big) + \gamma E[x_{t,q}|\Omega_t]
+\end{aligned}
+\]
+
+El término ($\beta-1$) es clave en $rr^*_t$:
+\vspace{1em}
+si $(\beta<1)$; “Accommodative policies”, terminan en sunspots, expectativas autocumplidas formadas en los agentes debido a los shocks.
+si ß>1; política de estabilización.
+
+\vspace{1em}
+
+Versión teórica de la regla estimada: Regla de política bajo estado estacionario.
+$r^*_t=\beta E[\pi_{t+1}|\Omega_t]+\gamma x_t$
+
+\vspace{1em}
+
+Interest rate smoothing:
+
+\vspace{1em}
+
+$r_t= \rho(L)r_{t-1}+(1-\rho)r^*_t$
+
+\vspace{1em}
+
+\indent $(\rho)$ es un parámetro de persistencia elegido por el banco central dentro de su regla de política monetaria. Determina qué fracción de la tasa de interés pasada se mantiene en el período actual y, por lo tanto, el grado de interest rate smoothing. Como consecuencia, un $\rho$ elevado (cercano a 1) genera una serie de tasas altamente autocorrelacionada (y un smoothing más continuo) y viceversa.
+
+\vspace{1em}
+
+\indent Esto se debe a que dependiendo de la coyuntura debe haber cierto ritmo en la radicalidad de la política monetaria a través de la FED Fund rate y el nivel de moderación que se aplique es reflejado en esta ecuación.
+
+\vspace{1em}
+
+\section*{Conversación científica posterior}
+
+\indent La contribución de Clarida, Galí y Gertler tampoco cerró definitivamente el debate. Si bien demostraron empíricamente que la Reserva Federal modificó su función de reacción entre los períodos pre-Volcker y Volcker-Greenspan, el modelo trataba dicho cambio de régimen como un dato exógeno y suponía parámetros $(\beta)$ constantes dentro de cada período. A partir de esta limitación, Lubik y Schorfheide (2004) desarrollaron un modelo DSGE estimado mediante técnicas bayesianas que incorporaba un parámetro $(\beta)$ continuo, que permite identificar si la economía opera bajo un régimen de determinación o indeterminación. Posteriormente, Cochrane encontró un problema en los fundamentos teóricos; afirmó que la conclusión de CGG depende de supuestos adicionales utilizados para resolver el sistema dinámico (como las condiciones de unicidad derivadas del aparato de Blanchard-Kahn y la exclusión de trayectorias explosivas bajo $\beta>1$). De esta manera, el trabajo de Clarida, Galí y Gertler no clausuró la discusión, sino que abrió una nueva etapa de investigación y puso en agenda comprender con mayor profundidad la interacción entre reglas de política monetaria, expectativas y estabilidad macroeconómica.
+
+
+\end{document}
